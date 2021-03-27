@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin-left: 0;
   font-family: 'Open Sans', sans-serif;
   color: #E5E9F0;
   background-color:#3B4252;
@@ -8,6 +8,7 @@ body {
 h1, h2, h3 {
   font-family: 'Rubik', sans-serif;
   color:#ECEFF4;
+  margin-top: 0;
 }
 
 a {
@@ -23,11 +24,7 @@ a {
   text-decoration: none;
 }
 
-.skill-highlight {
-  font-size: 1.1em;
-}
-
-#nav-bar {
+#nav-bar-container {
   position: fixed;
   top: 0;
   width: 100%;
@@ -36,7 +33,7 @@ a {
   text-align: center;
 }
 
-#nav-bar > ul {
+#nav-bar-container > ul {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -46,13 +43,56 @@ a {
   list-style: none;
 }
 
-#nav-bar > ul > li {
+#nav-bar-container > ul > li {
   display: inline-block;
   margin-right: 30px; 
 }
 
-#nav-bar > ul > li > a {
+#nav-bar-container > ul > li:last-child {
+  margin-right: 0px; 
+}
+
+#nav-bar-container > ul > li > a {
   color: #E5E9F0;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+#site-container {
+  width: 800px;
+  margin: 90px auto;
+}
+
+#greeting {
+  text-align: center;
+}
+
+.section {
+  margin: 50px 0;
+}
+
+.section > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#profile-picture-wrapper {
+  width: 30%;
+  padding-top: 30%;
+  background-image: url("assets/img/renatosbispo.jpg");
+  background-size: cover;
+  border-radius: 50%
+}
+
+#about-me {
+  margin-left: 20px;
+  width: calc(69% - 20px);
+}
+
+.text-highlight {
+  color: #88C0D0;
+}
+
+.skill-highlight {
+  font-size: 1.1em;
 }

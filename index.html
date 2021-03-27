@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- HEADER SECTION -->
-    <div id="nav-bar">
+    <div id="nav-bar-container">
       <ul>
         <li><a href="#about-me">About me</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -22,68 +22,80 @@
         <li><a href="#contact">Contact</a></li>
     </ul>
     </div>
-    <img id="myself" src="assets/img/renatosbispo.jpg" alt="Renato Silva Bispo" width="200px"> 
-    <h1>
-        Hi, I'm Renato Silva Bispo,<br>
-        Web Developer.
-    </h1>
-    
-    <!-- ABOUT ME SECTION -->
-    <h2 id="about-me">About Me</h2>
-    <p>
-        I've been breaking things to figure out how they work since I was a teenager (or maybe since my childhood, though from what I can remember I used to prefer building toy rockets out of cardboard and used bottles).  
-    </p>
-    <p>
-        Nowadays, after <strong>2.4 decades of being alive</strong>, I spend most of my time studying and practicing Web Development and Computer Science related subjects, hanging out <em>(virtually of course)</em> with my friends from Trybe's Web Development Course and dreaming of moving from my hometown in <strong>Diadema, São Paulo, Brazil to the USA.</strong>    
-    </p>
+    <div id="site-container">
+      <div id="greeting">
+        <h1>
+          Hi, I'm <span class="text-highlight">
+            Renato Bispo</span>,<br>
+          <span>Web Developer</span>.
+        </h1>
+      </div>
+      <div class="section">
+        <div id="profile-picture-wrapper">  
+        </div>
+        <div id="about-me">
+          <h2>About Me</h2>
+          <p>
+              I've been breaking things to figure out how they work since I was a teenager (or maybe since my childhood, though from what I can remember I used to prefer building toy rockets out of cardboard and used bottles).  
+          </p>
+          <p>
+              Nowadays, after <strong>2.4 decades of being alive</strong>, I spend most of my time studying and practicing Web Development and Computer Science related subjects, hanging out <em>(virtually of course)</em> with my friends from Trybe's Web Development Course and dreaming of moving from my hometown in <strong>Diadema, São Paulo, Brazil to the USA.</strong>    
+          </p>
+        </div>
+      </div>
+      <!--
+      <img id="myself" src="assets/img/renatosbispo.jpg" alt="Renato Silva Bispo" width="200px"> 
+      -->
+      <!-- ABOUT ME SECTION -->
 
-    <!-- SKILLS SECTION -->
-    <h2 id="skills">Skills</h2>
-    <h3>In front of the screen:</h3>
-    <ul>
-        <li class="skill-highlight"><strong>Linux CLI</strong></li>
-        <li>Git & GitHub</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-    </ul>
+      <!-- SKILLS SECTION -->
+      <h2 id="skills">Skills</h2>
+      <h3>In front of the screen:</h3>
+      <ul>
+          <li class="skill-highlight"><strong>Linux CLI</strong></li>
+          <li>Git & GitHub</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+      </ul>
 
-    <h3>In front of the mirror:</h3>
-    <ul>
-        <li>Self-awareness</li>
-        <li class="skill-highlight"><strong>Self-knowledge</strong></li>
-        <li>Resilience</li>
-        <li><a href="#myself"><em>Reflection</em></a> <em><strong>(bad joke, sorry)</strong></em></li>
-    </ul>
+      <h3>In front of the mirror:</h3>
+      <ul>
+          <li>Self-awareness</li>
+          <li class="skill-highlight"><strong>Self-knowledge</strong></li>
+          <li>Resilience</li>
+          <li><a href="#myself"><em>Reflection</em></a> <em><strong>(bad joke, sorry)</strong></em></li>
+      </ul>
 
-    <h3>In front of the team:</h3>
-    <ul>
-        <li class="skill-highlight"><strong>Autonomy</strong></li>
-        <li>Empathy</li>
-        <li>Openness to feedback</li>
-        <li>Willingness to help</li>
-        <li>Sense of ownership</li>
-    </ul>
+      <h3>In front of the team:</h3>
+      <ul>
+          <li class="skill-highlight"><strong>Autonomy</strong></li>
+          <li>Empathy</li>
+          <li>Openness to feedback</li>
+          <li>Willingness to help</li>
+          <li>Sense of ownership</li>
+      </ul>
 
-    <!-- FAVORITE WEBSITES SECTION -->
-    <h2 id="favorite-websites">Favorite Websites</h2>
-    <ul>
-        <li><a href="https://www.akitaonrails.com/" target="_blank">Fabio Akita's blog</a></li>
-        <li><a href="https://blog.betrybe.com/" target="_blank">Trybe's blog</a></li>
-        <li><a href="https://www.theverge.com/" target="_blank">The Verge</a></li>
-        <li><a href="https://www.wired.com/" target="_blank">Wired</a></li>
-    </ul>
+      <!-- FAVORITE WEBSITES SECTION -->
+      <h2 id="favorite-websites">Favorite Websites</h2>
+      <ul>
+          <li><a href="https://www.akitaonrails.com/" target="_blank">Fabio Akita's blog</a></li>
+          <li><a href="https://blog.betrybe.com/" target="_blank">Trybe's blog</a></li>
+          <li><a href="https://www.theverge.com/" target="_blank">The Verge</a></li>
+          <li><a href="https://www.wired.com/" target="_blank">Wired</a></li>
+      </ul>
 
-    <!-- CONTACT SECTION -->
-    <h2 id="contact">Contact</h2>
-    <ul>
-        <li><strong>E-mail:</strong> <a href="mailto:renatoslvbispo@gmail.com">renatoslvbispo@gmail.com</a></li>
-        <li><strong>WhatsApp:</strong> <a href="http://bit.ly/whatsapp-renato-bispo-en" target="_blank">+55 11 95985-2122</a></li>
-        <li><strong>LinkedIn:</strong> <a href="http://bit.ly/linkedin-renato-bispo" target="_blank">linkedin.com/in/renatosbispo</a></li>
-    </ul>
+      <!-- CONTACT SECTION -->
+      <h2 id="contact">Contact</h2>
+      <ul>
+          <li><strong>E-mail:</strong> <a href="mailto:renatoslvbispo@gmail.com">renatoslvbispo@gmail.com</a></li>
+          <li><strong>WhatsApp:</strong> <a href="http://bit.ly/whatsapp-renato-bispo-en" target="_blank">+55 11 95985-2122</a></li>
+          <li><strong>LinkedIn:</strong> <a href="http://bit.ly/linkedin-renato-bispo" target="_blank">linkedin.com/in/renatosbispo</a></li>
+      </ul>
 
-    <!-- BACK TO INDEX -->
-    <a href="#index"><button>Back to Index</button></a>
+      <!-- BACK TO INDEX -->
+      <a href="#index"><button>Back to Index</button></a>
+    </div>
 </body>
 </html>
