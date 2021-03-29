@@ -16,7 +16,7 @@
     <!-- HEADER SECTION -->
     <div id="nav-bar-container">
       <ul>
-        <li><a href="#about-me">About me</a></li>
+        <li><a href="#greeting">About me</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#favorite-websites">Favorite Websites</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -30,11 +30,11 @@
           <span>Web Developer</span>.
         </h1>
       </div>
-      <div class="section">
+      <!-- ABOUT ME SECTION -->
+      <div id="about-me" class="section">
         <div id="profile-picture-wrapper">  
         </div>
-        <div id="about-me">
-          <h2>About Me</h2>
+        <div id="about-me-text">
           <p>
               I've been breaking things to figure out how they work since I was a teenager (or maybe since my childhood, though from what I can remember I used to prefer building toy rockets out of cardboard and used bottles).  
           </p>
@@ -43,59 +43,75 @@
           </p>
         </div>
       </div>
-      <!--
-      <img id="myself" src="assets/img/renatosbispo.jpg" alt="Renato Silva Bispo" width="200px"> 
-      -->
-      <!-- ABOUT ME SECTION -->
-
       <!-- SKILLS SECTION -->
-      <h2 id="skills">Skills</h2>
-      <h3>In front of the screen:</h3>
-      <ul>
-          <li class="skill-highlight"><strong>Linux CLI</strong></li>
-          <li>Git & GitHub</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Python</li>
-      </ul>
+      <div id="skills" class="section">
+        <div class="section-header">
+          <h2>Skills</h2>
+        </div>
+        <div class="section-column">
+          <h3>In front of the screen</h3>
+          <ul>
+              <li class="skill-highlight"><strong>Linux CLI</strong></li>
+              <li>Git & GitHub</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+          </ul>
+        </div>
 
-      <h3>In front of the mirror:</h3>
-      <ul>
-          <li>Self-awareness</li>
-          <li class="skill-highlight"><strong>Self-knowledge</strong></li>
-          <li>Resilience</li>
-          <li><a href="#myself"><em>Reflection</em></a> <em><strong>(bad joke, sorry)</strong></em></li>
-      </ul>
+        <div class="section-column">
+          <h3>In front of the mirror</h3>
+          <ul>
+              <li>Self-awareness</li>
+              <li class="skill-highlight"><strong>Self-knowledge</strong></li>
+              <li>Resilience</li>
+              <li><a href="#profile-picture-wrapper"><em>Reflection</em></a> <em><strong>(bad joke, sorry)</strong></em></li>
+          </ul>
+        </div>
 
-      <h3>In front of the team:</h3>
-      <ul>
-          <li class="skill-highlight"><strong>Autonomy</strong></li>
-          <li>Empathy</li>
-          <li>Openness to feedback</li>
-          <li>Willingness to help</li>
-          <li>Sense of ownership</li>
-      </ul>
-
+        <div class="section-column">
+          <h3>In front of the team</h3>
+          <ul>
+              <li class="skill-highlight"><strong>Autonomy</strong></li>
+              <li>Empathy</li>
+              <li>Openness to feedback</li>
+              <li>Willingness to help</li>
+              <li>Sense of ownership</li>
+          </ul>
+        </div>
+      </div>
       <!-- FAVORITE WEBSITES SECTION -->
-      <h2 id="favorite-websites">Favorite Websites</h2>
-      <ul>
-          <li><a href="https://www.akitaonrails.com/" target="_blank">Fabio Akita's blog</a></li>
-          <li><a href="https://blog.betrybe.com/" target="_blank">Trybe's blog</a></li>
-          <li><a href="https://www.theverge.com/" target="_blank">The Verge</a></li>
-          <li><a href="https://www.wired.com/" target="_blank">Wired</a></li>
-      </ul>
-
+      <div id="favorite-websites" class="section">
+        <div class="section-header">
+          <h2>Favorite Websites</h2>
+        </div>
+        <p class="section-description">
+          Definitely not a comprehensive list!
+        <p>
+        <ul class="inline-list">
+            <li><a href="https://www.akitaonrails.com/" target="_blank">Fabio Akita's blog</a></li>
+            <li><a href="https://blog.betrybe.com/" target="_blank">Trybe's blog</a></li>
+            <li><a href="https://www.theverge.com/" target="_blank">The Verge</a></li>
+            <li><a href="https://www.wired.com/" target="_blank">Wired</a></li>
+        </ul>
+      </div>
       <!-- CONTACT SECTION -->
-      <h2 id="contact">Contact</h2>
-      <ul>
-          <li><strong>E-mail:</strong> <a href="mailto:renatoslvbispo@gmail.com">renatoslvbispo@gmail.com</a></li>
-          <li><strong>WhatsApp:</strong> <a href="http://bit.ly/whatsapp-renato-bispo-en" target="_blank">+55 11 95985-2122</a></li>
-          <li><strong>LinkedIn:</strong> <a href="http://bit.ly/linkedin-renato-bispo" target="_blank">linkedin.com/in/renatosbispo</a></li>
-      </ul>
-
+      <div id="contact" class="section">
+        <div class="section-header">
+          <h2>Contact</h2>
+        </div>
+        <p class="section-description">
+          I would love to have a chat with you :)
+        </p>
+        <ul class="inline-list">
+            <li><a href="mailto:renatoslvbispo@gmail.com">renatoslvbispo@gmail.com</a></li>
+            <li><a href="http://bit.ly/whatsapp-renato-bispo-en" target="_blank">+55 11 95985-2122</a></li>
+            <li><a href="http://bit.ly/linkedin-renato-bispo" target="_blank">linkedin.com/in/renatosbispo</a></li>
+        </ul>
+        <a id="back-to-top" href="#">Back to top</a>
+      </div>
       <!-- BACK TO INDEX -->
-      <a href="#index"><button>Back to Index</button></a>
     </div>
 </body>
 </html>

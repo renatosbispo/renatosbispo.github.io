@@ -13,6 +13,14 @@ h1, h2, h3 {
 
 a {
   color: #88C0D0;
+  transition: color 0.6s;
+  text-decoration: none;
+}
+
+a:hover,
+#nav-bar-container ul li a:hover {
+  color: #5E81AC;
+  transition: color 0.6s;
 }
 
 strong {
@@ -20,20 +28,22 @@ strong {
   text-decoration: underline;
 }
 
-a {
-  text-decoration: none;
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 #nav-bar-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   height: 50px;
   background-color: #2E3440;
   text-align: center;
+  box-shadow: 0px 1px 5px #2E3440;
 }
 
-#nav-bar-container > ul {
+#nav-bar-container ul {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -43,24 +53,25 @@ a {
   list-style: none;
 }
 
-#nav-bar-container > ul > li {
+#nav-bar-container ul li {
   display: inline-block;
   margin-right: 30px; 
 }
 
-#nav-bar-container > ul > li:last-child {
+#nav-bar-container ul li:last-child {
   margin-right: 0px; 
 }
 
-#nav-bar-container > ul > li > a {
+#nav-bar-container ul li a {
   color: #E5E9F0;
+  transition: color 0.6s;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 #site-container {
   width: 800px;
-  margin: 90px auto;
+  margin: 90px auto 0;
 }
 
 #greeting {
@@ -71,9 +82,28 @@ a {
   margin: 50px 0;
 }
 
-.section > div {
+.section div:not(.section-header) {
   display: inline-block;
   vertical-align: top;
+}
+
+.section-header h2 {
+  text-align: center;
+  color: #A3BE8C;
+}
+
+.section-column:not(:last-child) {
+  height: 225px;
+  margin-right: 25px;
+  padding-right: 25px;
+  border-right: 1px solid #E5E9F0;
+}
+
+.section-description {
+  text-align: center;
+  font-size: 1.05em;
+  font-weight: 700;
+  margin-top: -15px;
 }
 
 #profile-picture-wrapper {
@@ -84,15 +114,66 @@ a {
   border-radius: 50%
 }
 
-#about-me {
+#about-me-text {
   margin-left: 20px;
   width: calc(69% - 20px);
 }
 
-.text-highlight {
-  color: #88C0D0;
+#about-me-text p:first-child {
+  margin-top: 0;
+}
+
+#skills.section {
+  text-align: center;  
+}
+
+#skills.section li {
+  line-height: 2;
+} 
+
+.inline-list {
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+.inline-list li {
+  display: inline-block;
+}
+
+.inline-list li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.inline-list li a {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+span.text-highlight {
+  color: #A3BE8C;
 }
 
 .skill-highlight {
   font-size: 1.1em;
+}
+
+#back-to-top {
+  display: block;
+  width: 110px;
+  margin: 50px auto 0;
+  padding: 10px;
+  background-color: #ECEFF4;
+  color: #3B4252;
+  font-size: 1.05em;
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.6s, box-shadow 0.6s;
+  border-radius: 3px;
+}
+
+#back-to-top:hover {
+  background-color: #A3BE8C;
+  box-shadow: 0px 3px 8px #2E3440;
+  transition: background-color 0.6s, box-shadow 0.6s;
 }
