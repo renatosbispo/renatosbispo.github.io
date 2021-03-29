@@ -33,6 +33,11 @@ ul {
   padding-left: 0;
 }
 
+::selection {
+  background-color: #A3BE8C;
+  color: #3B4252;
+}
+
 #nav-bar-container {
   position: absolute;
   top: 0;
