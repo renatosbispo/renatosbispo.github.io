@@ -1,3 +1,4 @@
 [submodule "trybe/projects/todo-list"]
 	path = trybe/projects/todo-list
 	url = https://github.com/tryber/sd-011-project-todo-list.git
+	branch = renatosbispo-project-todo-list
